@@ -1,0 +1,290 @@
+/* =========================================================
+   Bărbierul de Colț — foaie de stiluri
+   Paletă: charcoal, pergament, alamă, roșu bordo (stâlp barber)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Libre+Franklin:wght@400;500;600&display=swap');
+
+:root {
+  --ink: #1E211F;
+  --ink-soft: #4A4A43;
+  --parchment: #EDE4D0;
+  --parchment-alt: #E1D5B8;
+  --line: #CBBE9C;
+  --brass: #B4893F;
+  --brass-dark: #8E6B2E;
+  --burgundy: #7A2E2E;
+  --burgundy-dark: #5C2222;
+  --steel: #4C5B5E;
+  --paper: #F6F1E4;
+
+  --font-head: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-body: 'Libre Franklin', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --maxw: 1140px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--burgundy); text-underline-offset: 3px; }
+a:hover { color: var(--brass-dark); }
+
+a:focus-visible, button:focus-visible, input:focus-visible,
+textarea:focus-visible, select:focus-visible {
+  outline: 3px solid var(--brass);
+  outline-offset: 2px;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-head);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  margin: 0 0 0.5em;
+  line-height: 1.1;
+}
+
+h1 { font-size: clamp(2.6rem, 6vw, 4.2rem); font-weight: 700; }
+h2 { font-size: clamp(1.8rem, 3.4vw, 2.5rem); font-weight: 600; }
+h3 { font-size: 1.2rem; font-weight: 600; letter-spacing: 0.01em; }
+
+p { max-width: 62ch; color: var(--ink-soft); }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 32px; }
+
+/* ---------- header ---------- */
+
+.site-header {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(237, 228, 208, 0.94);
+  backdrop-filter: blur(6px);
+  border-bottom: 3px solid var(--ink);
+}
+
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 32px; gap: 24px;
+}
+
+.brand {
+  font-family: var(--font-head);
+  font-size: 1.5rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.03em;
+  color: var(--ink); text-decoration: none; white-space: nowrap;
+}
+.brand span { color: var(--burgundy); }
+
+.main-nav ul { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
+.main-nav a { color: var(--ink-soft); text-decoration: none; font-size: 0.95rem; }
+.main-nav a:hover { color: var(--burgundy); }
+
+/* ---------- hero ---------- */
+
+.hero { padding: 72px 0 96px; border-bottom: 3px solid var(--ink); }
+
+.hero .wrap {
+  display: grid; grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px; align-items: center;
+}
+
+.hero-copy p { font-size: 1.08rem; margin-bottom: 1.5em; }
+
+.hero-meta {
+  display: flex; gap: 30px; margin: 26px 0 30px;
+  padding-top: 18px; border-top: 2px solid var(--ink);
+}
+.hero-meta div { max-width: none; }
+.hero-meta strong {
+  display: block; font-family: var(--font-head);
+  font-size: 1.4rem; color: var(--burgundy);
+}
+.hero-meta span { font-size: 0.86rem; color: var(--ink-soft); }
+
+.btn {
+  display: inline-block; background: var(--ink); color: var(--paper);
+  padding: 14px 28px; text-decoration: none; font-family: var(--font-head);
+  text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.95rem;
+  border: 2px solid var(--ink); cursor: pointer;
+}
+.btn:hover { background: var(--burgundy); border-color: var(--burgundy); color: var(--paper); }
+
+.btn-outline {
+  background: transparent; color: var(--ink); border: 2px solid var(--ink); margin-left: 14px;
+}
+.btn-outline:hover { background: transparent; color: var(--burgundy); border-color: var(--burgundy); }
+
+.hero-art {
+  background: var(--paper); border: 3px solid var(--ink); padding: 20px;
+}
+
+/* ---------- sections ---------- */
+
+section { padding: 88px 0; }
+section.alt { background: var(--parchment-alt); }
+
+.section-head { max-width: 640px; margin-bottom: 44px; }
+
+/* barber-pole rule: divider stilizat, motiv real din subiect */
+.pole-rule {
+  height: 10px; margin: 0 auto 44px;
+  background: repeating-linear-gradient(
+    -45deg, var(--burgundy) 0 14px, var(--parchment) 14px 20px,
+    var(--steel) 20px 34px, var(--parchment) 34px 40px
+  );
+  border: 2px solid var(--ink);
+}
+
+/* ---------- despre ---------- */
+
+.despre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.despre-grid .figure-note {
+  border-left: 4px solid var(--burgundy); padding-left: 20px;
+  font-family: var(--font-head); font-size: 1.15rem;
+  text-transform: none; letter-spacing: 0; color: var(--ink); max-width: 40ch;
+}
+
+/* ---------- servicii (listă + filtre) ---------- */
+
+.filtre {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 32px;
+}
+.filtru-btn {
+  font-family: var(--font-head); text-transform: uppercase; letter-spacing: 0.03em;
+  font-size: 0.85rem; padding: 8px 16px; background: var(--paper);
+  border: 2px solid var(--ink); color: var(--ink); cursor: pointer;
+}
+.filtru-btn.activ, .filtru-btn:hover { background: var(--ink); color: var(--paper); }
+
+.servicii-list {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px;
+  background: var(--ink); border: 1px solid var(--ink);
+}
+.servicii-list li { background: var(--parchment); padding: 30px; }
+section.alt .servicii-list li { background: var(--parchment-alt); }
+
+.serviciu-top {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 12px; margin-bottom: 8px;
+}
+.serviciu-pret {
+  font-family: var(--font-head); font-size: 1.15rem; color: var(--burgundy);
+  white-space: nowrap;
+}
+.tag {
+  display: inline-block; font-size: 0.78rem; letter-spacing: 0.03em;
+  text-transform: uppercase; color: var(--steel);
+  border: 1px solid var(--steel); padding: 2px 10px; margin-bottom: 10px;
+}
+
+/* ---------- echipă ---------- */
+
+.echipa-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+}
+.echipa-grid figure {
+  margin: 0; background: var(--paper); border: 2px solid var(--ink); padding: 0;
+  text-align: center;
+}
+.echipa-grid img { width: 100%; aspect-ratio: 1 / 1; }
+.echipa-grid figcaption { padding: 16px 14px 20px; }
+.echipa-grid figcaption strong {
+  display: block; font-family: var(--font-head); text-transform: uppercase;
+  letter-spacing: 0.02em; font-size: 1rem; margin-bottom: 4px;
+}
+.echipa-grid figcaption span { font-size: 0.88rem; color: var(--ink-soft); }
+
+/* ---------- program / tabel ---------- */
+
+.table-wrap { overflow-x: auto; border: 2px solid var(--ink); }
+table { width: 100%; border-collapse: collapse; background: var(--paper); min-width: 620px; }
+caption { text-align: left; font-size: 0.9rem; color: var(--ink-soft); padding: 14px 20px 0; }
+thead th {
+  text-align: left; font-family: var(--font-head); text-transform: uppercase;
+  letter-spacing: 0.03em; font-size: 0.92rem; padding: 16px 20px;
+  border-bottom: 3px solid var(--ink);
+}
+tbody td { padding: 16px 20px; border-bottom: 1px solid var(--line); color: var(--ink-soft); }
+tbody tr:last-child td { border-bottom: none; }
+td.price { color: var(--burgundy); font-weight: 600; }
+
+/* ---------- contact / programare ---------- */
+
+.contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; }
+
+.contact-info ul { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 14px; }
+.contact-info li { padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.contact-info li strong {
+  display: block; font-family: var(--font-head); text-transform: uppercase;
+  font-size: 0.9rem; letter-spacing: 0.02em; color: var(--burgundy); margin-bottom: 2px;
+}
+
+form {
+  background: var(--paper); border: 2px solid var(--ink); padding: 36px;
+}
+.field { margin-bottom: 20px; }
+.field label { display: block; font-size: 0.9rem; margin-bottom: 6px; font-weight: 600; }
+.field input, .field select, .field textarea {
+  width: 100%; padding: 11px 13px; border: 1px solid var(--line);
+  background: var(--parchment); font-family: var(--font-body);
+  font-size: 0.98rem; color: var(--ink);
+}
+.field input[aria-invalid="true"], .field textarea[aria-invalid="true"] {
+  border-color: var(--burgundy);
+}
+.field textarea { resize: vertical; min-height: 100px; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.field-hint { font-size: 0.82rem; color: var(--ink-soft); margin-top: 4px; }
+.field-error {
+  font-size: 0.82rem; color: var(--burgundy); margin: 6px 0 0; font-weight: 600;
+}
+
+form .btn { border: none; cursor: pointer; margin-top: 6px; }
+
+.form-status {
+  margin-top: 18px; padding: 14px 16px; font-size: 0.92rem;
+  border: 2px solid var(--ink); display: none;
+}
+.form-status--succes { display: block; background: #E7EEE6; border-color: var(--steel); }
+.form-status--eroare { display: block; background: #F3E1DD; border-color: var(--burgundy); }
+
+/* ---------- footer ---------- */
+
+footer { border-top: 3px solid var(--ink); padding: 36px 0; }
+footer .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+footer p { margin: 0; font-size: 0.88rem; color: var(--ink-soft); }
+footer .foot-links { display: flex; gap: 20px; list-style: none; padding: 0; margin: 0; }
+footer .foot-links a { font-size: 0.88rem; }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 880px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .hero-art { order: -1; max-width: 420px; margin: 0 auto; }
+  .despre-grid, .contact-grid { grid-template-columns: 1fr; }
+  .servicii-list { grid-template-columns: 1fr; }
+  .echipa-grid { grid-template-columns: repeat(2, 1fr); }
+  .field-row { grid-template-columns: 1fr; }
+  .main-nav ul { gap: 16px; }
+}
+
+@media (max-width: 560px) {
+  .wrap { padding: 0 20px; }
+  section { padding: 60px 0; }
+  .main-nav ul { display: none; }
+  .echipa-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

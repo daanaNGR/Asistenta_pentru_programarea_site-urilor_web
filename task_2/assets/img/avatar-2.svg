@@ -1,0 +1,12 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="a2">
+  <title id="a2">Portret ilustrat, bărbieriță cu păr prins și ochelari</title>
+  <circle cx="150" cy="150" r="150" fill="#DDD3BC"/>
+  <ellipse cx="150" cy="192" rx="68" ry="78" fill="#B4893F"/>
+  <ellipse cx="150" cy="160" rx="48" ry="54" fill="#E8C393"/>
+  <path d="M100 140 C100 95, 200 95, 200 140 C200 118, 190 108, 150 108 C110 108, 100 118, 100 140 Z" fill="#2A2118"/>
+  <ellipse cx="150" cy="86" rx="22" ry="14" fill="#2A2118"/>
+  <rect x="112" y="152" width="26" height="18" rx="6" fill="none" stroke="#1E211F" stroke-width="4"/>
+  <rect x="162" y="152" width="26" height="18" rx="6" fill="none" stroke="#1E211F" stroke-width="4"/>
+  <line x1="138" y1="160" x2="162" y2="160" stroke="#1E211F" stroke-width="4"/>
+  <path d="M112 205 C124 220, 176 220, 188 205 C182 232, 118 232, 112 205 Z" fill="#7A2E2E"/>
+</svg>

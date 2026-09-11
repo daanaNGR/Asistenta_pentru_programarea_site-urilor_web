@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bărbierul de Colț — barbershop în Chișinău</title>
+<meta name="description" content="Barbershop în Chișinău: tuns clasic, skin fade, barbierit cu briciul și pachete pentru evenimente. Programează-te online.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Libre+Franklin:wght@400;500;600&display=swap">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="#top" class="brand">Bărbierul de <span>Colț</span></a>
+    <nav class="main-nav" aria-label="Navigare principală">
+      <ul>
+        <li><a href="#despre">Despre</a></li>
+        <li><a href="#servicii">Servicii</a></li>
+        <li><a href="#echipa">Echipă</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#contact">Programare</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1>Un tuns bun nu se grăbește.</h1>
+        <p>
+          Suntem un barbershop mic în centrul Chișinăului, unde fiecare
+          client stă pe scaun exact cât are nevoie — nu mai puțin, ca să
+          iasă pe ușă mulțumit, nu mai mult, ca să nu piardă seara.
+        </p>
+        <p>
+          Tuns clasic, skin fade, barbierit cu briciul și prosoape calde —
+          toate făcute de o echipă mică, cu unelte îngrijite și scaune vechi
+          de piele, aduse special pentru atmosferă.
+        </p>
+        <div>
+          <a href="#contact" class="btn">Programează-te acum</a>
+          <a href="#servicii" class="btn btn-outline">Vezi serviciile</a>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <strong>3</strong>
+            <span>barberi în echipă</span>
+          </div>
+          <div>
+            <strong>45 min</strong>
+            <span>durata unui tuns</span>
+          </div>
+          <div>
+            <strong>2016</strong>
+            <span>anul deschiderii</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/img/hero-barber.svg" width="640" height="640" alt="Ilustrație cu un fotoliu de bărbier și un stâlp barber pole">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DESPRE ===== -->
+  <section id="despre">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Despre noi</h2>
+      </div>
+      <div class="despre-grid">
+        <div>
+          <p>
+            Bărbierul de Colț a pornit de la o frustrare simplă: prea multe
+            saloane grăbesc clientul ca să încapă cât mai mulți oameni
+            într-o oră. Noi am ales invers — programări la interval fix, un
+            singur client pe scaun, fără suprapuneri.
+          </p>
+          <p>
+            Lucrăm cu unelte întreținute zilnic, prosoape calde adevărate și
+            produse de îngrijire pentru barbă și piele, nu doar pentru păr.
+            Rezultatul contează mai mult decât viteza.
+          </p>
+        </div>
+        <div>
+          <p class="figure-note">
+            „Un client mulțumit vine înapoi peste trei săptămâni. Un client
+            grăbit nu se mai întoarce."
+          </p>
+          <p>
+            Fondatorul, Sergiu Lupu, a lucrat șapte ani în saloane din
+            Chișinău și București înainte să deschidă acest spațiu, alături
+            de încă doi barberi din echipă.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICII (LISTĂ + FILTRE, DINAMIC) ===== -->
+  <section id="servicii" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Servicii și prețuri</h2>
+        <p>Filtrează după categorie ca să găsești rapid ce cauți.</p>
+      </div>
+      <div class="filtre" id="servicii-filtre" aria-label="Filtrare servicii după categorie"></div>
+      <ul class="servicii-list" id="servicii-list"></ul>
+    </div>
+  </section>
+
+  <!-- ===== ECHIPĂ (DINAMIC) ===== -->
+  <section id="echipa">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Echipa</h2>
+        <p>Trei barberi, trei stiluri — alegi cu cine te programezi.</p>
+      </div>
+      <div class="echipa-grid" id="echipa-grid"></div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="pole-rule" role="presentation"></div></div>
+
+  <!-- ===== PROGRAM / TABEL (DINAMIC) ===== -->
+  <section id="program" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Program de funcționare</h2>
+        <p>Weekend-ul se ocupă rapid — recomandăm programare cu 2-3 zile înainte.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <caption>Programul săptămânal al barbershop-ului</caption>
+          <thead>
+            <tr>
+              <th scope="col">Ziua</th>
+              <th scope="col">Ora</th>
+              <th scope="col">Detalii</th>
+              <th scope="col">Preț</th>
+            </tr>
+          </thead>
+          <tbody id="program-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / PROGRAMARE ===== -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Programează-te</h2>
+          <p>
+            Completează formularul cu datele tale și serviciul dorit — te
+            sunăm noi să confirmăm ora exactă.
+          </p>
+          <ul>
+            <li>
+              <strong>Adresă</strong>
+              <a href="https://www.google.com/maps" target="_blank" rel="noopener">Str. Pușkin 17, Chișinău</a>
+            </li>
+            <li>
+              <strong>Telefon</strong>
+              <a href="tel:+37360987654">+373 60 987 654</a>
+            </li>
+            <li>
+              <strong>E-mail</strong>
+              <a href="mailto:programari@barbieruldecolt.md">programari@barbieruldecolt.md</a>
+            </li>
+            <li>
+              <strong>Rețele sociale</strong>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a> ·
+              <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+            </li>
+          </ul>
+        </div>
+
+        <form id="programare-form" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="nume">Nume și prenume</label>
+              <input type="text" id="nume" name="nume" placeholder="Ex: Andrei Munteanu" required>
+            </div>
+            <div class="field">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="+373 6X XXX XXX" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="serviciu">Serviciu dorit</label>
+            <select id="serviciu" name="serviciu"></select>
+          </div>
+
+          <div class="field">
+            <label for="mesaj">Mesaj (opțional)</label>
+            <textarea id="mesaj" name="mesaj" placeholder="Spune-ne ce zi și oră ți-ar conveni, sau cu cine dintre barberi preferi."></textarea>
+            <p class="field-hint">Te confirmăm telefonic în aceeași zi lucrătoare.</p>
+          </div>
+
+          <button type="submit" class="btn">Trimite programarea</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="an-curent">2026</span> Bărbierul de Colț. Programări în Chișinău.</p>
+    <ul class="foot-links">
+      <li><a href="#top">Sus de tot</a></li>
+      <li><a href="#contact">Programare</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>
