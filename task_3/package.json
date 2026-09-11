@@ -1,0 +1,10 @@
+{
+  "name": "tema-js",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Temă JavaScript: filter/map/reduce, module, coș de cumpărături (temă barbershop)",
+  "scripts": {
+    "ex1": "node 1-note/grades.js",
+    "ex2": "node 2-elevi/main.js"
+  }
+}
