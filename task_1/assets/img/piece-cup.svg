@@ -1,0 +1,9 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t3">
+  <title id="t3">Cană ceramică cu toartă, glazură bej</title>
+  <ellipse cx="190" cy="330" rx="90" ry="14" fill="#C9BFA8" opacity="0.5"/>
+  <path d="M130 180 L145 300 C147 316, 233 316, 235 300 L250 180 Z" fill="#DED2AE"/>
+  <ellipse cx="190" cy="180" rx="60" ry="14" fill="#C4B384"/>
+  <ellipse cx="190" cy="180" rx="48" ry="9" fill="#8C8168"/>
+  <path d="M250 200 C300 200, 300 270, 250 270" fill="none" stroke="#DED2AE" stroke-width="16" stroke-linecap="round"/>
+  <path d="M150 230 C170 238, 210 238, 230 230" fill="none" stroke="#8C8168" stroke-width="2" opacity="0.5"/>
+</svg>

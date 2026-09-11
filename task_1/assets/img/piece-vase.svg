@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t1">
+  <title id="t1">Vas ceramic înalt, glazură verde oxid</title>
+  <ellipse cx="200" cy="360" rx="120" ry="16" fill="#C9BFA8" opacity="0.5"/>
+  <path d="M150 350
+           C130 300, 128 220, 150 170
+           C160 148, 150 120, 170 100
+           C185 86, 215 86, 230 100
+           C250 120, 240 148, 250 170
+           C272 220, 270 300, 250 350
+           C240 362, 160 362, 150 350 Z"
+        fill="#35564E"/>
+  <path d="M150 350 C160 362, 240 362, 250 350 C244 356, 156 356, 150 350 Z" fill="#24413A"/>
+  <ellipse cx="200" cy="101" rx="30" ry="9" fill="#24413A"/>
+  <path d="M158 220 C180 230, 220 230, 242 220" fill="none" stroke="#24413A" stroke-width="2" opacity="0.6"/>
+  <path d="M155 270 C180 282, 220 282, 245 270" fill="none" stroke="#24413A" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="185" cy="150" rx="10" ry="22" fill="#ffffff" opacity="0.12"/>
+</svg>

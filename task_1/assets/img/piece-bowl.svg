@@ -1,0 +1,10 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t2">
+  <title id="t2">Bol ceramic larg, glazură ocru</title>
+  <ellipse cx="200" cy="330" rx="130" ry="18" fill="#C9BFA8" opacity="0.5"/>
+  <path d="M80 210 C80 210, 110 300, 200 300 C290 300, 320 210, 320 210
+           C320 210, 300 240, 200 240 C100 240, 80 210, 80 210 Z" fill="#95592A"/>
+  <path d="M80 210 C110 260, 290 260, 320 210 C320 260, 280 310, 200 310 C120 310, 80 260, 80 210 Z" fill="#A9622F"/>
+  <ellipse cx="200" cy="210" rx="120" ry="26" fill="#B87333"/>
+  <ellipse cx="200" cy="210" rx="98" ry="18" fill="#7A4A1E"/>
+  <path d="M120 215 C150 224, 250 224, 280 215" fill="none" stroke="#5C3714" stroke-width="2" opacity="0.5"/>
+</svg>

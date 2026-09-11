@@ -1,0 +1,10 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t4">
+  <title id="t4">Farfurie ceramică pictată manual</title>
+  <ellipse cx="200" cy="200" rx="150" ry="150" fill="#DED2AE"/>
+  <ellipse cx="200" cy="200" rx="150" ry="150" fill="none" stroke="#8C8168" stroke-width="3"/>
+  <ellipse cx="200" cy="200" rx="105" ry="105" fill="#EDE7D6"/>
+  <ellipse cx="200" cy="200" rx="105" ry="105" fill="none" stroke="#B87333" stroke-width="3" stroke-dasharray="6 10"/>
+  <path d="M150 210 C165 180, 235 180, 250 210 C240 230, 160 230, 150 210 Z" fill="#35564E" opacity="0.85"/>
+  <circle cx="170" cy="195" r="6" fill="#A9622F"/>
+  <circle cx="230" cy="195" r="6" fill="#A9622F"/>
+</svg>

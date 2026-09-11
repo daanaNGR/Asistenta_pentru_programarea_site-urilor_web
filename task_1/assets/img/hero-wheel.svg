@@ -1,0 +1,50 @@
+<svg viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Ilustrație cu o roată de olărit și un vas în lucru</title>
+  <defs>
+    <radialGradient id="wheelShade" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#DED2AE"/>
+      <stop offset="100%" stop-color="#C4B384"/>
+    </radialGradient>
+  </defs>
+
+  <!-- fundal organic -->
+  <ellipse cx="320" cy="560" rx="260" ry="26" fill="#C9BFA8" opacity="0.5"/>
+
+  <!-- picior roata -->
+  <rect x="288" y="430" width="64" height="120" rx="10" fill="#8C8168"/>
+
+  <!-- disc roata -->
+  <ellipse cx="320" cy="430" rx="230" ry="58" fill="url(#wheelShade)" stroke="#8C8168" stroke-width="4"/>
+  <ellipse cx="320" cy="422" rx="230" ry="58" fill="none" stroke="#8C8168" stroke-width="2" opacity="0.5"/>
+
+  <!-- linii de miscare -->
+  <path d="M 90 412 A 230 58 0 0 1 550 412" fill="none" stroke="#35564E" stroke-width="3" stroke-dasharray="2 14" opacity="0.6"/>
+
+  <!-- lutul de baza pe roata -->
+  <ellipse cx="320" cy="410" rx="86" ry="24" fill="#A9622F"/>
+
+  <!-- vasul in formare -->
+  <path d="M280 400
+           C270 360, 268 300, 292 250
+           C300 232, 340 232, 348 250
+           C372 300, 370 360, 360 400
+           C352 412, 288 412, 280 400 Z"
+        fill="#B87333" stroke="#7A4A1E" stroke-width="3"/>
+  <ellipse cx="320" cy="252" rx="30" ry="10" fill="#95592A"/>
+  <ellipse cx="320" cy="400" rx="42" ry="10" fill="#95592A" opacity="0.6"/>
+
+  <!-- linii orizontale pe vas, urme de deget -->
+  <path d="M282 300 C300 306, 340 306, 358 300" fill="none" stroke="#7A4A1E" stroke-width="2" opacity="0.6"/>
+  <path d="M280 340 C300 348, 340 348, 360 340" fill="none" stroke="#7A4A1E" stroke-width="2" opacity="0.6"/>
+
+  <!-- maini stilizate -->
+  <path d="M250 330 C230 320, 220 300, 232 280 C240 268, 258 270, 266 284 C274 300, 270 320, 260 336 Z"
+        fill="#E7C9A9" stroke="#B8875E" stroke-width="3"/>
+  <path d="M390 330 C410 320, 420 300, 408 280 C400 268, 382 270, 374 284 C366 300, 370 320, 380 336 Z"
+        fill="#E7C9A9" stroke="#B8875E" stroke-width="3"/>
+
+  <!-- stropi de lut -->
+  <circle cx="150" cy="470" r="5" fill="#A9622F" opacity="0.7"/>
+  <circle cx="500" cy="460" r="7" fill="#A9622F" opacity="0.6"/>
+  <circle cx="470" cy="500" r="4" fill="#35564E" opacity="0.5"/>
+</svg>
