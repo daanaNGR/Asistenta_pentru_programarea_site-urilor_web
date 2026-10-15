@@ -5,6 +5,7 @@ import Task from './components/Task'
 
 function App() {
   const [tasks, setTasks] = useState([])
+  const [filter, setFilter] = useState('all') // all | active | completed
 
   const addTask = (title) => {
     const trimmed = title.trim()
@@ -30,6 +31,12 @@ function App() {
     setTasks(tasks.filter((task) => task.id !== id))
   }
 
+  const visibleTasks = tasks.filter((task) => {
+    if (filter === 'active') return !task.completed
+    if (filter === 'completed') return task.completed
+    return true
+  })
+
   const completedCount = tasks.filter((task) => task.completed).length
 
   return (
@@ -43,11 +50,27 @@ function App() {
 
       <TaskForm onAddTask={addTask} />
 
-      {tasks.length === 0 ? (
+      <div className="filters">
+        {[
+          ['all', 'Toate'],
+          ['active', 'Active'],
+          ['completed', 'Finalizate'],
+        ].map(([value, label]) => (
+          <button
+            key={value}
+            className={filter === value ? 'active' : ''}
+            onClick={() => setFilter(value)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {visibleTasks.length === 0 ? (
         <p className="empty">Nu există sarcini momentan.</p>
       ) : (
         <ul className="task-list">
-          {tasks.map((task) => (
+          {visibleTasks.map((task) => (
             <Task
               key={task.id}
               task={task}

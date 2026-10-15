@@ -1,16 +1,52 @@
-# React + Vite
+# Task Manager (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicație Task Manager realizată cu React (JavaScript) și Vite. Permite adăugarea, vizualizarea, marcarea ca finalizată, ștergerea și filtrarea sarcinilor.
 
-Currently, two official plugins are available:
+## Pornire
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Structura proiectului
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+├── components/
+│   ├── Task.jsx
+│   └── TaskForm.jsx
+├── App.jsx
+├── App.css
+└── main.jsx
+```
 
-## Expanding the Oxlint configuration
+## Răspunsuri la întrebări
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+**1. Care este rolul folderului `src`?**
+Conține codul sursă al aplicației (componente React, stiluri, fișierul de intrare `main.jsx`). Tot ce scriem noi ca dezvoltatori se află aici, iar Vite îl compilează și îl include în aplicația finală.
+
+**2. Ce reprezintă fișierul `App.jsx`?**
+Este componenta principală (rădăcină) a aplicației. Ea conține starea globală (lista de sarcini) și compune celelalte componente (`TaskForm`, `Task`). `main.jsx` o montează în pagină, în elementul `#root` din `index.html`.
+
+**3. Ce informații sunt păstrate în `package.json`?**
+Numele și versiunea proiectului, scripturile (`dev`, `build`, `lint`, `preview`), dependențele necesare în aplicație (`react`, `react-dom`) și dependențele de dezvoltare (`vite`, plugin-ul React, oxlint etc.), cu versiunile lor.
+
+**4. Ce reprezintă folderul `node_modules`?**
+Folderul în care npm descarcă și instalează toate pachetele (dependențele) listate în `package.json`, împreună cu dependențele lor. Se generează cu `npm install`, nu se editează manual și nu se urcă pe Git (este în `.gitignore`).
+
+## Alte elemente ale proiectului
+
+- `public/` – fișiere statice servite direct, fără procesare.
+- `index.html` – pagina HTML de bază, în care este montată aplicația.
+- `vite.config.js` – configurarea Vite (plugin-ul React).
+
+## Funcționalități
+
+- adăugare sarcină (nu se acceptă input gol);
+- afișarea listei cu `map()`;
+- marcare finalizată / nefinalizată (checkbox, text tăiat și ✓);
+- ștergere cu `filter()`;
+- contor: *Total sarcini* și *Finalizate*;
+- mesaj „Nu există sarcini momentan.";
+- **Bonus:** filtre *Toate / Active / Finalizate*.
