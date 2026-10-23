@@ -1,0 +1,17 @@
+﻿Summary,Issue Type,Priority,Assignee,Story Points,Description,Labels
+TF-1 Definirea scopului și fișa proiectului,Task,High,Membrul 3,2,"User Story: US-01..09. Criterii de acceptare: Fișa conține scopul în 3–5 propoziții, publicul și lista funcționalităților.",docs
+TF-2 Redactarea User Stories și a criteriilor de acceptare,Task,High,Membrul 3,3,"User Story: US-01..09. Criterii de acceptare: Minimum 6 User Stories, fiecare cu criterii verificabile prin testare.",docs
+"TF-3 Schițele interfeței (dashboard, listă, formular)",Task,High,Membrul 1,3,"User Story: US-07. Criterii de acceptare: Cele 3 schițe + stările de încărcare, eroare și listă goală.",ui
+TF-4 Inițializarea repository-ului GitHub și a proiectului React (Vite),Task,High,Membrul 3,2,User Story: —. Criterii de acceptare: Proiectul pornește cu npm run dev; branch-ul main este publicat pe GitHub.,setup
+"TF-5 Structura componentelor, Navbar și navigarea între pagini",Task,High,Membrul 1,3,"User Story: US-07. Criterii de acceptare: Navigare între Dashboard, Sarcini și Despre; pagina activă este evidențiată.",ui
+TF-6 Serviciul de date asincron cu operații CRUD,Task,High,Membrul 2,3,"User Story: US-01,03,05,09. Criterii de acceptare: Funcții create/read/update/delete; datele rămân după refresh.",data
+TF-7 Lista sarcinilor (TaskCard) și stările încărcare / eroare / listă goală,Task,High,Membrul 1,3,"User Story: US-08. Criterii de acceptare: Lista se afișează; apar mesajele pentru încărcare, eroare și listă goală.",ui
+TF-8 Formularul de adăugare și editare,Task,High,Membrul 1,3,"User Story: US-01,03. Criterii de acceptare: Formularul adaugă și modifică sarcini; la editare câmpurile sunt completate.",ui
+TF-9 Validarea datelor din formular,Task,High,Membrul 2,3,"User Story: US-02. Criterii de acceptare: Titlu obligatoriu, 3–80 caractere; erori afișate lângă câmp.",data
+TF-10 Ștergerea sarcinii cu confirmare,Task,Medium,Membrul 2,2,User Story: US-05. Criterii de acceptare: Dialog de confirmare; Anulează păstrează sarcina.,data
+TF-11 Schimbarea statusului dintr-un card,Task,Medium,Membrul 2,2,User Story: US-04. Criterii de acceptare: Noul status se afișează; sarcinile finalizate apar tăiate.,data
+"TF-12 Căutare, filtrare după status și prioritate, sortare",Task,Medium,Membrul 2,5,User Story: US-06. Criterii de acceptare: Filtrele se combină; mesaj și reset când nu există rezultate.,data
+TF-13 Dashboard cu statistici,Task,Medium,Membrul 1,5,"User Story: US-07. Criterii de acceptare: Total, pe status, restante, progres %, termene apropiate; valori actualizate automat.",ui
+TF-14 Mesaje de succes și eroare (Toast),Task,Low,Membrul 1,2,"User Story: US-01,03,05,08. Criterii de acceptare: Mesaj după fiecare acțiune; dispare după 3 secunde.",ui
+TF-15 Testarea cerințelor și remedierea bug-urilor,Task,High,Membrul 3,5,User Story: US-01..09. Criterii de acceptare: Toate scenariile din tabelul de testare au status Trecut.,qa
+"TF-16 README.md, capturi de ecran și pregătirea prezentării",Task,Medium,Membrul 3,3,"User Story: —. Criterii de acceptare: README complet, capturi adăugate, board Jira actualizat.",docs
